@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поздравительная открытка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="confetti"></div>
+    <div class="container">
+        <h1 id="message">С Днем Рождения!</h1>
+
+        <button id="restart-confetti" class="confetti-button">🎉</button>
+        <button id="toggle-audio" class="audio-button">🔇</button>
+        
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="image/1.jpg" alt="Фото 1" style="width:100%;"></div>
+                <div class="slide"><img src="image/2.jpg" alt="Фото 2" style="width:100%;"></div>
+                <div class="slide"><img src="image/3.jpg" alt="Фото 3" style="width:100%;"></div>
+                <div class="slide"><img src="image/4.jpg" alt="Фото 4" style="width:100%;"></div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <p id="main-text">
+            Поздравляю тебя с днем рождения! Желаю тебе успехов и удачи, чтобы все твои мечты сбывались. Пусть любое начинание приносит тебе радость и удовлетворение. Желаю крепкого здоровья, чтобы ты всегда была любима и финансово благополучна. Пусть доходы растут, а трудности обходят стороной. Пусть твой день будет наполнен счастьем и радостью, ведь сегодня твой праздник. От всей души желаю тебе быть всегда счастливой!
+        </p>        
+
+        <audio id="audio" src="music/music.mp3" autoplay loop></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
